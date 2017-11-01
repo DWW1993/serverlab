@@ -5,7 +5,6 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
-        // "start": "tsc index.ts && node index.js"
     },
     "keywords": [],
     "author": "",
@@ -13,12 +12,12 @@
     "dependencies": {
         "@types/body-parser": "^1.16.7",
         "@types/express": "4.0.39",
-        "body-parser": "^1.18.2",
-        "express": "^4.16.2",
         "@types/ramda": "0.24.18",
         "@types/shortid": "0.0.29",
-        "typescript": "latest",
+        "body-parser": "^1.18.2",
+        "express": "^4.16.2",
         "ramda": "0.25.0",
-        "shortid": "^2.2.8"
+        "shortid": "^2.2.8",
+        "typescript": "latest"
     }
 }
