@@ -1,10 +1,11 @@
 {
-    "name": "node-express-example",
+    "name": "tweetserver",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "server/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "concurrently \"tsc -p . --watch\" \"nodemon --watch server\""
     },
     "keywords": [],
     "author": "",
@@ -12,12 +13,16 @@
     "dependencies": {
         "@types/body-parser": "^1.16.7",
         "@types/express": "4.0.39",
-        "@types/ramda": "0.24.18",
-        "@types/shortid": "0.0.29",
+        "@types/lodash": "^4.14.82",
+        "@types/ramda": "^0.24.18",
         "body-parser": "^1.18.2",
         "express": "^4.16.2",
+        "@types/shortid": "0.0.29",
+        "typescript": "latest",
         "ramda": "0.25.0",
         "shortid": "^2.2.8",
-        "typescript": "latest"
+        "nodemon": "^1.12.1",
+        "lodash": "^4.17.4",
+        "concurrently": "^3.5.0"
     }
 }
